@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PlataformaEventosApp</string>
+    <string name="atracao_default_titulo">Atração</string>
+    <string name="atracao_default_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id odio sit amet sapien massa nunc. </string>
+    <string name="atracao_bt_voltar">Voltar</string>
+    <string name="atracao_default_local">Local:\nUniversidade de Brasilia, Pavilhão João Calmon</string>
+    <string name="atracao_default_time">Horário: 12:00 - 14:00</string>
 </resources>

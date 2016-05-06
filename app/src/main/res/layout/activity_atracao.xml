@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.unb.struct_trainees.plataformaeventosapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/atracao_id_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atracao_default_titulo"
+            android:textSize="@dimen/atracao_titulo_size"
+            android:id="@+id/atracao_text_titulo" />
+
+        <ImageView
+            android:id="@+id/atracao_img_foto"
+            android:layout_marginTop="@dimen/atracao_top_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/atracao_img_height" />
+        <TextView
+            android:id="@+id/atracao_text_info"
+            android:layout_marginTop="@dimen/atracao_top_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/atracao_default_info"
+            android:textSize="@dimen/atracao_info_size"/>
+        <TextView
+            android:id="@+id/atracao_text_local"
+            android:layout_marginTop="@dimen/atracao_top_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/atracao_default_local"
+            android:textSize="@dimen/atracao_info_size"/>
+        <TextView
+            android:id="@+id/atracao_text_time"
+            android:layout_marginTop="@dimen/atracao_top_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/atracao_default_time"
+            android:textSize="@dimen/atracao_info_size"/>
+        <Button
+            android:id="@+id/atracao_bt_voltar"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/atracao_top_margin"
+            android:text="@string/atracao_bt_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
