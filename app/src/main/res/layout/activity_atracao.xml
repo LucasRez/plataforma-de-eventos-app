@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.unb.struct_trainees.plataformaeventosapp.MainActivity">
+    tools:context=".AtracaoActivity">
 
     <LinearLayout
         android:id="@+id/atracao_id_container"
