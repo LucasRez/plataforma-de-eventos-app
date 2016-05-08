@@ -7,4 +7,9 @@
     <dimen name="atracao_info_size">20sp</dimen>
     <dimen name="atracao_titulo_size">40sp</dimen>
     <dimen name="atracao_top_margin">16dp</dimen>
+
+    <dimen name="categoria_default_pad">32dp</dimen>
+    <dimen name="categoria_side_pad">30dp</dimen>
+    <dimen name="categoria_default_margin">20dp</dimen>
+    <dimen name="categoria_text_size">20sp</dimen>
 </resources>
