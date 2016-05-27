@@ -5,9 +5,14 @@
     <string name="atracao_bt_voltar">Voltar</string>
     <string name="atracao_default_local">Local:\nUniversidade de Brasilia, Pavilhão João Calmon</string>
     <string name="atracao_default_time">Horário: 12:00 - 14:00</string>
-    
+
     <string name="str_shows">Shows</string>
     <string name="str_palestras">Palestras</string>
     <string name="str_workshops">Workshops</string>
     <string name="str_outras_atracoes">Outras atrações</string>
+
+    <string name="home_sobre">Sobre o Evento</string>
+    <string name="home_sobre_desc">Descrição</string>
+    <string name="home_realizacao">Realização</string>
+    <string name="home_realizacao_desc">Descrição</string>
 </resources>
