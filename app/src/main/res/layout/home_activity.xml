@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_tv_sobre"
+        android:layout_margin="@dimen/atracao_top_margin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_sobre"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/atracao_img_height"
+        android:id="@+id/home_iv_sobre_image"
+        android:layout_below="@+id/home_tv_sobre"
+        android:background="@color/crimson"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_tv_sobre_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/atracao_top_margin"
+        android:layout_below="@id/home_iv_sobre_image"
+        android:text="@string/home_sobre_desc"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_tv_realizacao"
+        android:layout_margin="@dimen/atracao_top_margin"
+        android:layout_below="@id/home_tv_sobre_desc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_realizacao"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/atracao_img_height"
+        android:id="@+id/home_iv_realizacao_image"
+        android:layout_below="@+id/home_tv_realizacao"
+        android:background="@color/light_blue"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_tv_realizacao_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/atracao_top_margin"
+        android:layout_below="@id/home_iv_realizacao_image"
+        android:text="@string/home_realizacao_desc"
+        android:textSize="16sp"/>
+
+
+
+
+</RelativeLayout>
