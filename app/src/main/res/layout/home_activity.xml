@@ -1,69 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/home_tv_sobre"
-        android:layout_margin="@dimen/atracao_top_margin"
-        android:layout_centerHorizontal="true"
-        android:text="@string/home_sobre"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        />
-
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/atracao_img_height"
-        android:id="@+id/home_iv_sobre_image"
-        android:layout_below="@+id/home_tv_sobre"
-        android:background="@color/crimson"
-        />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/home_tv_sobre_desc"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/atracao_top_margin"
-        android:layout_below="@id/home_iv_sobre_image"
-        android:text="@string/home_sobre_desc"
-        android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/sobre_o_evento">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/home_tv_realizacao"
-        android:layout_margin="@dimen/atracao_top_margin"
-        android:layout_below="@id/home_tv_sobre_desc"
-        android:layout_centerHorizontal="true"
-        android:text="@string/home_realizacao"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_tv_sobre"
+                android:layout_margin="@dimen/atracao_top_margin"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/home_sobre"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/atracao_img_height"
-        android:id="@+id/home_iv_realizacao_image"
-        android:layout_below="@+id/home_tv_realizacao"
-        android:background="@color/light_blue"
-        />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/atracao_img_height"
+                android:id="@+id/home_iv_sobre_image"
+                android:background="@color/crimson"
+                android:contentDescription="@string/imagem_sobre" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/home_tv_realizacao_desc"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/atracao_top_margin"
-        android:layout_below="@id/home_iv_realizacao_image"
-        android:text="@string/home_realizacao_desc"
-        android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_tv_sobre_desc"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/atracao_top_margin"
+                android:text="@string/home_sobre_desc"
+                android:textSize="16sp"/>
 
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/realizacao"
+            android:layout_below="@id/sobre_o_evento">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_tv_realizacao"
+                android:layout_margin="@dimen/atracao_top_margin"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/home_realizacao"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                />
 
-</RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/atracao_img_height"
+                android:id="@+id/home_iv_realizacao_image"
+                android:background="@color/light_blue"
+                android:contentDescription="@string/imagem_realizacao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_tv_realizacao_desc"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/atracao_top_margin"
+                android:text="@string/home_realizacao_desc"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

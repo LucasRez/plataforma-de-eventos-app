@@ -15,4 +15,6 @@
     <string name="home_sobre_desc">Descrição</string>
     <string name="home_realizacao">Realização</string>
     <string name="home_realizacao_desc">Descrição</string>
+    <string name="imagem_sobre">Imagem sobre</string>
+    <string name="imagem_realizacao">Imagem realizacao</string>
 </resources>
