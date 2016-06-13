@@ -5,63 +5,70 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/categoria_default_pad"
     android:paddingBottom="@dimen/categoria_default_pad"
     tools:context=".AtracaoActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingRight="@dimen/categoria_side_pad"
-        android:paddingLeft="@dimen/categoria_side_pad"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <Button
+        <include layout="@layout/layout_toolbar"/>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light_blue"
-            android:paddingTop="@dimen/categoria_default_pad"
-            android:paddingBottom="@dimen/categoria_default_pad"
-            android:layout_marginBottom="@dimen/categoria_default_margin"
-            android:textSize="@dimen/categoria_text_size"
-            android:textAllCaps="false"
-            android:text="@string/str_shows"/>
+            android:layout_below="@id/toolbar"
+            android:padding="@dimen/categoria_side_pad"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/green"
-            android:paddingTop="@dimen/categoria_default_pad"
-            android:paddingBottom="@dimen/categoria_default_pad"
-            android:layout_marginBottom="@dimen/categoria_default_margin"
-            android:textSize="@dimen/categoria_text_size"
-            android:textAllCaps="false"
-            android:text="@string/str_palestras"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue"
+                android:paddingTop="@dimen/categoria_default_pad"
+                android:paddingBottom="@dimen/categoria_default_pad"
+                android:layout_marginBottom="@dimen/categoria_default_margin"
+                android:textSize="@dimen/categoria_text_size"
+                android:textAllCaps="false"
+                android:text="@string/str_shows"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/crimson"
-            android:paddingTop="@dimen/categoria_default_pad"
-            android:paddingBottom="@dimen/categoria_default_pad"
-            android:layout_marginBottom="@dimen/categoria_default_margin"
-            android:textSize="@dimen/categoria_text_size"
-            android:textAllCaps="false"
-            android:text="@string/str_workshops"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:paddingTop="@dimen/categoria_default_pad"
+                android:paddingBottom="@dimen/categoria_default_pad"
+                android:layout_marginBottom="@dimen/categoria_default_margin"
+                android:textSize="@dimen/categoria_text_size"
+                android:textAllCaps="false"
+                android:text="@string/str_palestras"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/orange"
-            android:paddingTop="@dimen/categoria_default_pad"
-            android:paddingBottom="@dimen/categoria_default_pad"
-            android:layout_marginBottom="@dimen/categoria_default_margin"
-            android:textSize="@dimen/categoria_text_size"
-            android:textAllCaps="false"
-            android:text="@string/str_outras_atracoes"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/crimson"
+                android:paddingTop="@dimen/categoria_default_pad"
+                android:paddingBottom="@dimen/categoria_default_pad"
+                android:layout_marginBottom="@dimen/categoria_default_margin"
+                android:textSize="@dimen/categoria_text_size"
+                android:textAllCaps="false"
+                android:text="@string/str_workshops"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:paddingTop="@dimen/categoria_default_pad"
+                android:paddingBottom="@dimen/categoria_default_pad"
+                android:layout_marginBottom="@dimen/categoria_default_margin"
+                android:textSize="@dimen/categoria_text_size"
+                android:textAllCaps="false"
+                android:text="@string/str_outras_atracoes"/>
 
 
 
-    </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>
